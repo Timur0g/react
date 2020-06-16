@@ -3,7 +3,9 @@ import Posts from './POSTS/Posts';
 
 import c from './Profile.module.css'
 
-const Profile = () => {
+
+const Profile = (props) => {
+    console.log(props)
     return (
         <div className={c.profile}>
             <div className={c.profile__avatar_description}>
@@ -15,8 +17,8 @@ const Profile = () => {
                     <div className={c.status}>Мы таджики, мы носители корон </div>
                 </div>
             </div>
-            
-            <Posts />
+
+            <Posts text={props.text}/>
         </div>
     )
 }

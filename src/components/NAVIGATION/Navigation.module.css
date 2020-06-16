@@ -12,6 +12,7 @@
     width: 100%;
     text-decoration: none;
     color: rgb(31, 31, 39);
+    padding: 10px;
   }
   
   .navigation_item:hover{
@@ -20,8 +21,10 @@
   
   
   .vertical_line {
+    display: flex;
+    align-self: center;
     width: 10px;
-    height: 20px;
+    height: 30px;
     background-color: rgb(31, 31, 39);
   }
 
@@ -33,6 +36,7 @@
     .navigation_item {
       text-align: center;
       margin: 5px 0px ;
+      width: auto;
     }
   
     .vertical_line {

@@ -2,15 +2,18 @@ import React from 'react'
 
 import c from './Posts.module.css'
 
-const Posts = () => {
+import Post from './POST/Post'
+
+const Posts = (props) => {
+    console.log(props)
     return (
         <div className={c.posts}>
             <h1 className={c.my_posts_title}>MY POSTS</h1>
 
-            <div className={c.post}>post</div>
-            <div className={c.post}>post2</div>
-            <div className={c.post}>postwwfeeeeedde2wggrrwe3iyrwyirwygrwhygrwhyeeeeeegrhgt54rrrrrrrrrrrrrrrrrrrrrrrrrrrr2</div>
-            <div className={c.post}>postwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhrrwe3iyrwyirwygrwhtwwfeeeeedde2wggrrwe3iyrwyirwygrwhygrwhyeeeeeegrhgt54rrrrrrrrrrrrrrrrrrrrrrrrrrrr2</div>
+            <div className={c.input_text_post}><textarea></textarea></div>
+            <div className={c.input_button_post}><button>Отправить</button></div>
+
+            <Post text={props.text}/>
         </div>
     )
 }

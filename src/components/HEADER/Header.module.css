@@ -1,8 +1,14 @@
 .header {
     display: flex;
     justify-content: center;
+    
 }
   
 .header img{
     height: 90px;
+    transition: all 0.3s;
+}
+
+.header img:hover{
+    height: 130px;
 }

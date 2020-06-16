@@ -1,0 +1,7 @@
+.post {
+    height: 100%;
+    background-color: cyan;
+    padding: 2%;
+    margin: 10px auto 30px;
+    word-break: break-all;
+  }

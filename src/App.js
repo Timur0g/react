@@ -7,15 +7,14 @@ import Profile from './components/PROFILE/Profile';
 
 // const Greetings = (props) => <div>Hey you! {props.firstName} {props.lastName}!</div>;
 
-console.log(c)
-
-const App = () => {
+const App = (props) => {
   return (
     <div className={c.app}>
       <Header />
       <Navigation />
 
-      <Profile />
+      <Profile text="My first props"/>
+      
     </div>
   );
 }
