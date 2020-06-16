@@ -1,23 +1,25 @@
 import React from 'react';
 
+import c from './Navigation.module.css'
+
 const Navigation = () => {
     return (
-        <div className="navigation">
+        <div className={c.navigation}>
 
-        <a className="navigation_item" href="/d">PROFILE</a>
-        <div className="vertical_line"></div>
+        <a className={c.navigation_item} href="/d">PROFILE</a>
+        <div className={c.vertical_line}></div>
 
-        <a className="navigation_item" href="/d">MESSAGES</a>
-        <div className="vertical_line"></div>
+        <a className={c.navigation_item} href="/d">MESSAGES</a>
+        <div className={c.vertical_line}></div>
 
-        <a className="navigation_item" href="/d">NEWS</a>
-        <div className="vertical_line"></div>
+        <a className={c.navigation_item} href="/d">NEWS</a>
+        <div className={c.vertical_line}></div>
 
-        <a className="navigation_item" href="/d">MUSIC</a>
-        <div className="vertical_line"></div>
+        <a className={c.navigation_item} href="/d">MUSIC</a>
+        <div className={c.vertical_line}></div>
 
-        <a className="navigation_item" href="/d">SETTINGS</a>
-        <div className="vertical_line"></div>
+        <a className={c.navigation_item} href="/d">SETTINGS</a>
+        <div className={c.vertical_line}></div>
 
       </div>
     )

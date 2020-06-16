@@ -1,0 +1,16 @@
+.posts {
+  margin: 50px auto 0px auto;
+}
+
+.my_posts_title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.post {
+  height: 100%;
+  background-color: cyan;
+  padding: 2%;
+  margin: 10px auto;
+  word-break: break-all;
+}

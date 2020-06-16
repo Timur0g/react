@@ -1,0 +1,41 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .navigation_item{
+    background-color: rgb(220, 221, 255);
+    margin: 0px 10px;
+    text-align: center;
+    transition: all 0.5s;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(31, 31, 39);
+  }
+  
+  .navigation_item:hover{
+    background-color: cornsilk;
+  }
+  
+  
+  .vertical_line {
+    width: 10px;
+    height: 20px;
+    background-color: rgb(31, 31, 39);
+  }
+
+  @media screen and (max-width: 800px) {
+    .navigation {
+      flex-direction: column;
+    }
+  
+    .navigation_item {
+      text-align: center;
+      margin: 5px 0px ;
+    }
+  
+    .vertical_line {
+      display: none;
+    }
+  }

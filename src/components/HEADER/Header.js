@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './../../logo.svg'
 
-const Header = () => <div className="header"><img src={logo} alt="logo"/></div>
+import c from './Header.module.css'
+
+const Header = () => <div className={c.header}><img src={logo} alt="logo"/></div>
 
 export default Header
