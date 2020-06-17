@@ -6,10 +6,10 @@ const Navigation = () => {
     return (
         <div className={c.navigation}>
 
-        <a className={c.navigation_item} href="/d">PROFILE</a>
+        <a className={c.navigation_item} href="/profile">PROFILE</a>
         <div className={c.vertical_line}></div>
 
-        <a className={c.navigation_item} href="/d">MESSAGES</a>
+        <a className={c.navigation_item} href="/messages">MESSAGES</a>
         <div className={c.vertical_line}></div>
 
         <a className={c.navigation_item} href="/d">NEWS</a>
