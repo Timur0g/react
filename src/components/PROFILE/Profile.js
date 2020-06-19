@@ -1,11 +1,10 @@
-import React from 'react';
+﻿import React from 'react';
 import Posts from './POSTS/Posts';
 
 import c from './Profile.module.css'
 
 
 const Profile = (props) => {
-    console.log(props)
     return (
         <div className={c.profile}>
             <div className={c.profile__avatar_description}>

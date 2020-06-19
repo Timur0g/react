@@ -1,11 +1,10 @@
-import React from 'react'
+﻿import React from 'react'
 
 import c from './Posts.module.css'
 
 import Post from './POST/Post'
 
 const Posts = (props) => {
-    console.log(props)
     return (
         <div className={c.posts}>
             <h1 className={c.my_posts_title}>MY POSTS</h1>

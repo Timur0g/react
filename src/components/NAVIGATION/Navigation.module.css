@@ -28,6 +28,10 @@
     background-color: rgb(31, 31, 39);
   }
 
+  .active{
+	background-color: cornsilk;
+   }
+
   @media screen and (max-width: 800px) {
     .navigation {
       flex-direction: column;

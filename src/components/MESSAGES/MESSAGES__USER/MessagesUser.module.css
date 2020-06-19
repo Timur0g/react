@@ -1,0 +1,20 @@
+* {
+    text-decoration: none;
+}
+
+.messages__user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.messages__user_item {
+    position: relative;
+    top: 0;
+    align-self: flex-start;
+    width: 20%;
+    color: rgb(78, 62, 62);
+    background-color: violet;
+    padding: 10px 0px;
+    text-align: center;
+}
