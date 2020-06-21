@@ -1,4 +1,7 @@
 .messages {
     width: 100%;
     margin: 50px auto 0px;
+    /* display: flex; */
+    /* justify-content: center;
+    flex-direction: column; */
 }

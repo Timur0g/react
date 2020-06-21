@@ -12,7 +12,7 @@ const MessagesUser = (props) => {
 
     return (
         <div className={c.messages__user}>
-            <NavLink className={c.messages__user_item} to={URL}> {NAME}</NavLink>
+            <NavLink className={c.messages__user_item} to={URL} activeClassName={c.active}> {NAME}</NavLink>
 
             <Route exact path={URL} render={(props) => <MessagesUserData DATA={DATA} />} />
             

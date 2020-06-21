@@ -12,9 +12,15 @@
     position: relative;
     top: 0;
     align-self: flex-start;
-    width: 20%;
+    max-width: 20%;
+    min-width: 20%;
     color: rgb(78, 62, 62);
     background-color: violet;
     padding: 10px 0px;
     text-align: center;
+}
+
+.active {
+    color: rgb(230, 223, 223);
+    background-color: rgb(30, 131, 17);
 }

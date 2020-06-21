@@ -1,8 +1,9 @@
 .messages__user_data {
-    width: 80%;
+    max-width: 80%;
+    min-width: 70%;
     height: 200px;
     background-color: yellow;
-    padding: 10px 0px;
-    text-align: center;
+    padding: 10px;
+    text-align: justify;
     overflow-y: scroll;
 }
