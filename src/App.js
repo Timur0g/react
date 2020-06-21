@@ -15,6 +15,7 @@ const App = (props) => {
       <BrowserRouter>
         <Header />
         <Navigation />
+test
 
         <Route path="/profile" render={() => <Profile posts={props.props.posts}/>} />
         <Route path="/messages" render={() => <Messages messages={props.props.messages}/>} />
