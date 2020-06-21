@@ -4,9 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+//  if (window.location.href === "http://localhost:3000/") {
+//     window.location.href = "http://localhost:3000/profile"
+//  }  
+
+const props = {
+  messages: 'Yoyoyoy',
+  posts: ['post1', 'post2','post1']
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App props={props}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

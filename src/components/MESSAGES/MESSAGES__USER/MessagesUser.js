@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Route } from 'react-router-dom';
 
-import c from './MessagesUser.module.css';
+import css from './MessagesUser.module.css';
 
 import MessagesUserData from './MESSAGES__USER_DATA/MessagesUserData';
 
@@ -11,8 +11,8 @@ const MessagesUser = (props) => {
     const DATA = props.DATA
 
     return (
-        <div className={c.messages__user}>
-            <NavLink className={c.messages__user_item} to={URL} activeClassName={c.active}> {NAME}</NavLink>
+        <div className={css.messages__user}>
+            <NavLink className={css.messages__user_item} to={URL} activeClassName={css.active}> {NAME}</NavLink>
 
             <Route exact path={URL} render={(props) => <MessagesUserData DATA={DATA} />} />
             

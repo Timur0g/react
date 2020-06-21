@@ -1,10 +1,10 @@
 import React from 'react';
 
-import c from './MessagesUserData.module.css';
+import css from './MessagesUserData.module.css';
 
 const MessagesUserData = (props) => {
     return(
-        <div className={c.messages__user_data}>{props.DATA}</div>
+        <div className={css.messages__user_data}>{props.DATA}</div>
     );
 };
 

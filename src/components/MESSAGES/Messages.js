@@ -1,11 +1,11 @@
 import React from 'react';
 
-import c from './Messages.module.css'
+import css from './Messages.module.css'
 
 import MessagesUser from './MESSAGES__USER/MessagesUser';
 import text from './text-test';
 
-const Messages = () => {
+const Messages = (props) => {
 
     const json = [
         {
@@ -21,11 +21,10 @@ const Messages = () => {
         }
     ];
     return (
-        <div className={c.messages}>
-            {/* <MessagesUser URL="1" NAME="Timur" DATA={text}/>
-            <MessagesUser URL="2" NAME="Ahmet" DATA="hello <br> werf3l <br>wfewfew eeef"/> */}
-            {json.map(item => <MessagesUser URL={item.id} NAME={item.name} DATA={item.text} />
-            )}
+        <div className={css.messages}>
+            <MessagesUser URL="1" NAME="Timur" DATA={props.messages}/>
+            <MessagesUser URL="2" NAME="Ahmet" DATA="hello <br> werf3l <br>wfewfew eeef"/>
+            {/* {json.map(item => <MessagesUser URL={item.id} NAME={item.name} DATA={item.text} />)} */}
 
         </div>
     );

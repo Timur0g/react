@@ -1,9 +1,9 @@
 import React from 'react'
-import c from './Post.module.css'
+import css from './Post.module.css'
 
 const Post = (props) => {
     return (
-        <div className={c.post}>{props.text}</div>
+        <div className={css.post}>{props.text}</div>
     )
 }
 
