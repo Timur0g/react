@@ -9,15 +9,13 @@ import Messages from './components/MESSAGES/Messages';
 import Profile from './components/PROFILE/Profile';
 
 const App = (props) => {
-  console.log(props)
   return (
     <div className={css.app}>
       <BrowserRouter>
         <Header />
         <Navigation />
-test
-
-        <Route path="/profile" render={() => <Profile posts={props.props.posts}/>} />
+        
+        <Route path="/profile" render={() => <Profile props={props.props}/>} />
         <Route path="/messages" render={() => <Messages messages={props.props.messages}/>} />
 
       </BrowserRouter>

@@ -6,19 +6,22 @@ import Post from './POST/Post'
 
 const Posts = (props) => {
 
-    // const json = [
-    //     {text:'My post'},{text:'My post2'},{text:'My post3'}
-    // ]
+    const element_text_area = React.createRef();
+
+    const onClick_add_post = () => {
+        props.props.add_post(element_text_area.current.value)
+        element_text_area.current.value = null
+    }
+
 
     return (
         <div className={css.posts}>
             <h1 className={css.my_posts_title}>MY POSTS</h1>
 
-            <div className={css.input_text_post}><textarea></textarea></div>
-            <div className={css.input_button_post}><button>Отправить</button></div>
+            <div className={css.input_text_post}><textarea ref={element_text_area} onInput={() => props.props.change_text_area(element_text_area.current.value)}></textarea></div>
+            <div className={css.input_button_post}><button onClick={onClick_add_post}>Отправить</button></div>
 
-            {/* <Post text='ahi'/> */}
-            {props.posts.map(item => <Post text={item} />)}
+            {props.props.posts.map(item => <Post text={item.text} />)}
         </div>
     )
 }
